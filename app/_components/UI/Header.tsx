@@ -22,10 +22,10 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="hidden sm:flex sm:items-center">
-            <Link href="#" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Home</Link>
-            <Link href="#services" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Services</Link>
+            <Link href="/" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Home</Link>
+            <Link href="/#services" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Services</Link>
             <Link href="/work" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Work Sample</Link>
-            <Link href="#connect" className="ml-4 px-4 py-2 text-sm font-medium text-gray-900 btn_primary">
+            <Link href="/#connect" className="ml-4 px-4 py-2 text-sm font-medium text-gray-900 btn_primary">
               Let&apos;s Connect
             </Link>
           </div>
@@ -49,9 +49,9 @@ export default function Navbar() {
         <div className="sm:hidden">
           <div className="pt-2 pb-3 space-y-1">
             <Link href="/" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</Link>
-            <Link href="#services" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</Link>
+            <Link href="/#services" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</Link>
             <Link href="/work" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Work Sample</Link>
-            <Link href="#connect" className="btn_primary ml-3">Let&apos;s Connect</Link>
+            <Link href="/#connect" className="btn_primary ml-3">Let&apos;s Connect</Link>
           </div>
         </div>
       )}
