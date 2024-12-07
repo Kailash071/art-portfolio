@@ -49,11 +49,11 @@ const services: Service[] = [
 export default function ServicesOffered() {
   return (
     <section className="py-12 bg-background" id='services'>
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Services Offered</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 max-w-screen-lg">
+        <h2 className="text-2xl md:text-[38px] font-normal mb-8 md:mb-12 lg:mb-20 text-center">Services Offered</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 place-items-center">
           {services.map((service, index) => (
-            <div key={index} className="bg-card flex flex-col place-items-center overflow-hidden">
+            <div key={index} className="bg-card flex flex-col  overflow-hidden">
               <Image
                 src={service.imageUrl}
                 alt={service.title}
@@ -70,7 +70,7 @@ export default function ServicesOffered() {
           <p className="mb-4 text-muted-foreground">
             From individuals to enterprises, we bring your stories to life with quirky, character-rich illustrations.
           </p>
-          <Link href='/work' role='button' className='px-4 py-2 text-sm font-medium text-gray-900 bg-blue-400 rounded-md hover:bg-blue-500'>See work sample</Link>
+          <Link href='/work' role='button' className='btn_dark flex-shrink-0'>See work sample</Link>
         </div>
       </div>
     </section>

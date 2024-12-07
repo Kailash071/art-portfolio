@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,7 +16,7 @@ export default function Navbar() {
                 BRI
               </div>
               <div className="ml-3">
-                <div className="text-lg font-semibold text-gray-800">Bharat Reddy Illustrations</div>
+                <div className="text-sm    md:text-lg font-semibold text-gray-800">Bharat Reddy Illustrations</div>
                 <div className="text-sm text-gray-500">Hyderabad, India</div>
               </div>
             </Link>
@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link href="#" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Home</Link>
             <Link href="#services" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Services</Link>
             <Link href="/work" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">Work Sample</Link>
-            <Link href="#connect" className="ml-4 px-4 py-2 text-sm font-medium text-gray-900 bg-blue-400 rounded-md hover:bg-blue-500">
+            <Link href="#connect" className="ml-4 px-4 py-2 text-sm font-medium text-gray-900 btn_primary">
               Let&apos;s Connect
             </Link>
           </div>
@@ -51,7 +51,7 @@ export default function Navbar() {
             <Link href="/" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</Link>
             <Link href="#services" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</Link>
             <Link href="/work" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Work Sample</Link>
-            <Link href="#connect" className="block px-3 py-2 text-base font-medium text-gray-900 bg-blue-400 hover:bg-blue-500">Let&apos;s Connect</Link>
+            <Link href="#connect" className="btn_primary ml-3">Let&apos;s Connect</Link>
           </div>
         </div>
       )}

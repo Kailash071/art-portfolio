@@ -37,8 +37,11 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-bold text-center mb-16 text-900">
+    <>
+    <div className="blue-diveder"></div>
+    <div className="bg-blue">
+    <section className="  py-10 md:py-20 px-4 sm:px-6 lg:px-8 ">
+      <h2 className="text-2xl md:text-[38px] font-normal mb-8 md:mb-12 lg:mb-20 text-center">
         Client&apos;s Testimonial
       </h2>
       <Carousel opts={{ align: "center" }} className="w-full">
@@ -74,5 +77,7 @@ export default function TestimonialSection() {
         </div>
       </Carousel>
     </section>
+    </div>
+    </>
   )
 }

@@ -27,8 +27,8 @@ export default function Portfolio() {
       : projects.filter((project) => project.category === selectedCategory)
   console.log("filteredProjects", filteredProjects)
   return (
-    <div className="container  px-4 py-8 lg:py-16">
-      <h2 className="ext-lg lg:text-3xl font-bold text-center mb-4 lg:mb-8">
+    <div className="container  px-4 py-8 lg:py-16 mx-auto max-w-screen-lg work-cards">
+      <h2 className="text-2xl md:text-5xl font-normal text-center  mb-10 md:mb-20">
         Check out our work!
       </h2>
       <Tabs defaultValue="all">
@@ -55,7 +55,7 @@ export default function Portfolio() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <div className="absolute bottom-0 right-10 flex gap-1">
+              <div className="absolute bottom-[-10px] right-10 flex gap-1 ">
                 <CarouselPrevious />
                 <CarouselNext />
               </div>
@@ -63,13 +63,13 @@ export default function Portfolio() {
             </TabsList>
           </div>
           {/* Standard tab list for large devices */}
-          <div className="hidden lg:flex w-full space-x-3 bg-white p-1 mt-3 mb-8">
+          <div className="hidden lg:flex w-full space-x-3 bg-white p-1 mt-3 mb-3">
           <TabsList className="w-full flex space-x-3 bg-white  p-1 mt-3 mb-8">
             {categories.map((category) => (
               <TabsTrigger
                 key={category.id}
                 value={category.id}
-                className={`rounded-2xl p-2.5 text-md font-bold leading-5 
+                className={`rounded-3xl py-2.5 px-5 text-md font-bold leading-5 
         ring-2 ring-black`}
                 onClick={() => selectTab(category.id)}
               >
@@ -79,7 +79,7 @@ export default function Portfolio() {
         </TabsList>
           </div>
         <>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mt-12 md:mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {isPending &&
               Array.from({ length: 3 }).map((_, index) => (
                 <div className="flex flex-col space-y-3" key={index}>

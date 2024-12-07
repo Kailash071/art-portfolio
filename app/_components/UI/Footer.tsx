@@ -4,7 +4,7 @@ import { LuFacebook, LuInstagram, LuLinkedin } from 'react-icons/lu'
 
 const Footer = () => {
   return (
-    <footer className=" p-8 text-gray-900">
+    <footer className=" p-8 text-gray-900 bg-gray-100">
     <div className="flex justify-between items-center">
       <div>
         <h3 className="text-xl font-bold mb-2">Bharat Reddy Illustrations</h3>
@@ -16,6 +16,7 @@ const Footer = () => {
         <Link href="#" className="hover:text-gray-200"><LuFacebook /></Link>
       </div>
     </div>
+    
     <div className="mt-8 text-center">
       <p>&copy; {new Date().getFullYear()} Bharat Reddy Illustrations. All rights reserved.</p>
     </div>

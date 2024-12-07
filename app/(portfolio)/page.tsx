@@ -12,24 +12,26 @@ export default function Component() {
       <section className="bg-white py-3 px-4 md:px-4 lg:px-6">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Beyond the Spoken and Written.
+          <div className="flex flex-col   gap-5 lg:gap-10 justify-start" style={{alignItems:'start'}}>
+          <h1 className="text-2xl md:text-5xl font-normal">
+              Beyond the  <span className="block">Spoken and Written.</span>
             </h1>
-            <p className="text-lg mb-6">
+            <p className="text-lg">
               Bhavya Desai Illustrations studio, with over 11 years of
               experience, has been working with leading brands to celebrate the
               unique culture of India through illustrations.
             </p>
-            <p className="text-lg mb-6">
+            <p className="text-lg">
               Our work is inspired by the vibrant landscapes, the quaint
               details, and the everyday beauty of Indian life.
             </p>
             <button
               type="button"
-              className=" text-gray-900 bg-blue-400 hover:bg-blue-500 px-6 py-2 rounded-md text-lg font-semibold"
+              className="  btn_dark "
             >
               Let&apos;s connect
             </button>
+          </div>
             <div className="flex justify-between mt-8">
               <div className="text-center">
                 <p className="text-3xl font-bold text-red-500">150+</p>
@@ -56,8 +58,11 @@ export default function Component() {
           </div>
         </div>
       </section>
+      <div className="divider"></div>
+      <div className="bg-yellow">
+
       <section className="py-12 px-4 md:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center  md:gap-10">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <Image
               src={banner2}
@@ -68,16 +73,21 @@ export default function Component() {
             />
           </div>
           <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="flex flex-col gap-4 lg:gap-8">
+          <h2 className="text-2xl md:text-[38px] font-normal">
               Why illustrations?
             </h2>
-            <p className="text-lg mb-6">
-              Stand out with illustrations that infuse uniqueness and humor,
-              turning your brand&apos;s story into a visual experience.
+            <p className="text-md md:text-[24px] mb-0">Don&apos;t Just Tell Your Story, <span className="block">Illustrate It!</span></p>
+            <p className="text-sm md:text-md ">
+              Stand out with illustrations that infuse uniqueness and <span className="block">humor,
+              turning your brand&apos;s story into a visual experience.</span>
             </p>
+          </div>
           </div>
         </div>
       </section>
+      
+      </div>
       <ServicesOffered/>
       <TestimonialSection />
       <section id="connect" className="py-12 px-4 md:px-6 lg:px-8 bg-gray-100">
@@ -99,7 +109,8 @@ export default function Component() {
       <p className="text-lg">Email: <a href="mailto:info@example.com" className="text-blue-600 hover:underline">info@example.com</a></p>
     </div>
   </div>
-</section>
+     </section>
+     <hr />
     </main>
   )
 }
